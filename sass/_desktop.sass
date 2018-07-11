@@ -1,5 +1,5 @@
 @media (min-width: 577px)
-  .col-md-3.navs
+  .col-md-4.navs
     position: fixed !important
     margin-left: 15px
     z-index: 2
@@ -35,9 +35,15 @@
       color: #ffffff
       padding: 3px 15px
       padding-left: 25px
-      text-align: left
+      font-family: Geometria
+      text-align: center
+      h4
+        font-size: 14px
+        margin-top: 20px
       ul
+        text-align: left
         display: block
+        margin: 0
         list-style-type: disc
         -webkit-margin-before: 1em
         -webkit-margin-after: 1em
@@ -69,8 +75,8 @@
       margin: 0 auto
       margin-top: -15px
       text-align: center
-      width: 200px
-      height: 100px
+      width: 180px
+      height: 90px
       background-color: $black
       border-bottom-left-radius: 100px
       border-bottom-right-radius: 100px
@@ -83,10 +89,15 @@
         display: table-cell
         color: #ffffff
         vertical-align: middle
+        text-transform: uppercase
+        font-family: Geometria
+        font-size: 26px
   .child-category-nav
     margin: 30px 0
     .col-md-4
       text-align: center
+      .btn
+        width: 60%
   .col-md-12.content-category
     padding: 15px 75px
     background: #ffffff
@@ -106,10 +117,11 @@
       user-select: none
       border: 1px solid transparent
       padding: .375rem .75rem
+      font-family: Geometria !important
       font-size: 1rem
       line-height: 1.5
       transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
-
+      border-radius: 0 !important
       &.btn-brown
         background-color: $brown
         color: #ffffff
@@ -187,43 +199,24 @@
     border: 1.5px dashed $orange
     width: 100%
   .title-text-brown
-    text-align: center
-    padding: 0 25px
-    width: fit-content
-    margin: auto
     color: $brown
-    background-color: #ffffff
-    margin-top: -35px
+    text-align: center
   .title-text-purple
-    text-align: center
-    padding: 0 25px
-    width: fit-content
-    margin: auto
     color: $purple
-    background-color: #ffffff
-    margin-top: -35px
+    text-align: center
   .title-text-green
-    text-align: center
-    padding: 0 25px
-    width: fit-content
-    margin: auto
     color: $green
-    background-color: #ffffff
-    margin-top: -35px
-  .title-text-orange
     text-align: center
-    padding: 0 25px
-    width: fit-content
-    margin: auto
+  .title-text-orange
     color: $orange
-    background-color: #ffffff
-    margin-top: -35px
+    text-align: center
   .category-title
     margin-top: 65px
+
   .img-circle
       border-radius: 50%
       &.image-item
-        width: 100%
+        width: 80%
         height: auto
   .category-items
     margin-top: 65px
@@ -231,34 +224,27 @@
         font-weight: 600
         line-height: 1
         padding: .375rem .75rem
+    h5
+      line-height: 1
+      font-size: 16px
+      padding: 0
+      margin: 5px 0
     .item-brown
       text-align: center
       h5
         color: $brown
-        line-height: 2
-        padding: 0
-        margin: 0
     .item-purple
       text-align: center
       h5
         color: $purple
-        line-height: 2
-        padding: 0
-        margin: 0
     .item-green
       text-align: center
       h5
         color: $green
-        line-height: 2
-        padding: 0
-        margin: 0
     .item-orange
       text-align: center
       h5
         color: $orange
-        line-height: 2
-        padding: 0
-        margin: 0
   .row.footer
     text-align: center
     padding-top: 15px
@@ -318,3 +304,10 @@
     display: flex
   .row.mobil
     display: none
+  .carousel-control-next, .carousel-control-prev
+    width: 10% !important
+  .modal-body
+    h3
+      font-size: 18px
+    h4
+      font-size: 14px

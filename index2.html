@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DANIEL</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+        <!-- Modal -->
+    <div class="modal fade" id="modalGoods" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Заказать</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="" />
+              </div>
+              <div class="col-md-6">
+                <h3></h3>
+                <h4></h4>
+                <span></span>
+                <input class="good-change" type="hidden" id="good-client" value=""/>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-6">
+                <input class="form-control" placeholder="Имя"/>
+              </div>
+              <div class="col-md-6">
+                <input class="form-control" placeholder="Номер телефона"/>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-purple" data-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-green">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div style="padding: 20px 0" class="col-md-4 navs ">
+        <div style="overflow: auto">
+          <img class="logo" src="img/logo.png" alt="">
+          <ul>
+            <li class="scroll" >
+              <span style="color: #ee7d19" class="icon-nav-daniel">&#9650;</span>
+              <a href="#one">Пироги</a></li>
+            <li class="scroll"><span style="color: #9d226a" class="icon-nav-daniel">&#9650;</span><a href="#two">Торты</a></li>
+            <li class="scroll" ><span style="color: #424242" class="icon-nav-daniel">&Delta;</span><a href="">Полуфабрикаты</a></li>
+            <li class="scroll"><span style="color: #8c2324" class="icon-nav-daniel">&#9650;</span><a href="">Горячее</a></li>
+            <li class="scroll"><span style="color: #afc91f" class="icon-nav-daniel">&#9650;</span><a href="">Салаты</a></li>
+            <li class="scroll"><span style="color: #7bac8b" class="icon-nav-daniel">&Delta;</span><a href="#contact">Схема проезда</a></li>
+          </ul>
+        </div>
+        <div class="footer">
+          <div class="row">
+            <div class="col-md-12">
+              <h3>Свяжитесь с нами</h3>
+            </div>
+            <div class="col-md-3">
+              <h4>КОНТАКТЫ</h4>
+            </div>
+            <div class="col-md-8">
+              <ul>
+                <li><i class="fab fa-whatsapp"></i> +7 701 717 34 81</li>
+                <li><i class="fab fa-whatsapp"></i> +7 701 357 55 55</li>
+              </ul>
+            </div>
+            <div class="col-md-12">
+              <button style="margin-bottom: 5px" class="btn btn-warning"><i  class="fab fa-instagram"></i>&nbsp;Посмотреть Instagram</button>
+              <button class="btn btn-success">Напишите в WhatsApp</button>
+            </div>
+            <div class="col-md-12">
+              <p>Наш адресс: Радлова, 65</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div data-spy="scroll" style="padding: 0" class="offset-sm-4 col-md-8 content">
+        <div class="header">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/header.png" alt="one">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/header.png" alt="one">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/header.png" alt="one">
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <section id="one" class="col-md-12 content-category">
+            <div class="half-circle">
+              <h2>Пироги</h2>
+            </div>
+            <div class="row child-category-nav">
+              <div class="col-md-4">
+                <li style="list-style:none" class="scroll">
+                  <a href="#one-1"><button class="btn btn-brown">Сытные</button></a>
+                </li>
+              </div>
+              <div class="col-md-4">
+                <li style="list-style:none" class="scroll">
+                  <a href="#one-1-1"><button class="btn btn-purple">Сладкие</button></a>
+                </li>
+              </div>
+              <div class="col-md-4">
+                <li style="list-style:none" class="scroll">
+                  <a href="#one-1-2"><button class="btn btn-green">Киш</button></a>
+                </li>
+              </div>
+            </div>
+            <div id="one-1"class="category-title">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="dotted-title-brown"></div>
+                </div>
+                <div style="background: transparent" class="col-md-2 title-text-brown">
+                  <h2>Сытные</h2>
+                </div>
+                <div class="col-md-5">
+                  <div class="dotted-title-brown"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row category-items justify-content-md-center">
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item " src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown"
+                >2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown">2000 тг. за кг.</button>
+              </div>
+            </div>
+            <div class="row category-items justify-content-md-center">
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-brown">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-brown">2000 тг. за кг.</button>
+              </div>
+            </div>
+            <div id="one-1-1" class="category-title">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="dotted-title-purple"></div>
+                </div>
+                <div style="background: transparent" class="col-md-2 title-text-purple">
+                  <h2>Сладкие</h2>
+                </div>
+                <div class="col-md-5">
+                  <div class="dotted-title-purple"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row category-items justify-content-md-center">
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple"
+                >2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+            </div>
+            <div class="row category-items justify-content-md-center">
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple"
+                >2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+            </div>
+            <div id="one-1-2"class="category-title">
+              <div class="row align-items-center">
+                <div class="col-md-5">
+                  <div class="dotted-title-green"></div>
+                </div>
+                <div style="background: transparent" class="col-md-2 title-text-green">
+                  <h2>Киш</h2>
+                </div>
+                <div class="col-md-5">
+                  <div class="dotted-title-green"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row category-items justify-content-md-center">
+              <div class="col-md-3 item-green">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-green"
+                >2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-green">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-green">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-green">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-green">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-green">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-green">2000 тг. за кг.</button>
+              </div>
+            </div>
+          </section>
+          <section id="two" style="background: none" class="col-md-12 content-category">
+            <div class="half-circle">
+              <h2>Торты</h2>
+            </div>
+            <div class="row category-items justify-content-md-center">
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button
+                  data-name="с мясом и картофелем"
+                  data-description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+                  data-image="/img/item.jpg"
+                  data-price="2000 тг. за кг."
+                  data-toggle="modal"
+                  data-target="#modalGoods"
+                  class="btn btn-tr-purple">
+                    2000 тг. за кг.
+                  </button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button data-toggle="modal" data-target="#modalGoods" class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+              <div class="col-md-3 item-purple">
+                <img class="img-circle image-item" src="/img/item.jpg" alt="">
+                <h5>с мясом и картофелем</h5>
+                <button data-toggle="modal" data-target="#modalGoods"  class="btn btn-tr-purple">2000 тг. за кг.</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div  class="col-md-8 align-self-center quote">
+          <p>Давайте признаемся себе в том, что старый добрый шоколадный торт помогеат людям жить, мне он точно помогает.</p>
+          <p>&#169; Одри Хепберн</p>
+        </div>
+        <div id="contact">
+          <div  class="row footer">
+            <div class="col-md-12 map">
+              <!--<iframe src="https://yandex.kz/map-widget/v1/-/CBuIILgRgA" width="100%" height="300" frameborder="1" allowfullscreen="true"></iframe>-->
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      $('.scroll').click(function(e){
+        if(e.preventDefault){
+          e.preventDefault()
+        }else{
+          e.stop()
+        };
+        var id = $(this).children("a").attr('href'),
+						top = $(id).offset().top;
+         $('html, body').animate({scrollTop: top},500);
+      });
+    });
+</script>
+<script type="text/javascript">
+  $('#modalGoods').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    var name = button.data('name'),
+        image = button.data('image'),
+        price = button.data('price');
+        description = button.data('description');
+    var modal = $(this)
+    modal.find('.modal-body .col-md-6 img').attr('src',image)
+    modal.find('.modal-body .col-md-6 h3').text(name)
+    modal.find('.modal-body .col-md-6 h4').text(price)
+    modal.find('.modal-body .col-md-6 span').text(description)
+    modal.find('.modal-body .col-md-6 input.good-change').val(name)
+  })
+</script>

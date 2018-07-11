@@ -1,0 +1,454 @@
+@import "fonts"
+@import "colors"
+h2,h3,h3,h4,h5,h6,p,span,li,button,a
+  font-family: Geometria !important
+body
+  background-color: white
+  overflow-x: hidden
+  padding: 0
+  margin: 0
+.navs
+  position: fixed !important
+  width: 25%
+  padding: 15px 0
+  z-index: 2
+  background: $grey
+  position: relative
+  text-align: center
+  -webkit-box-shadow: -1px 0px 15px -5px rgba(0,0,0,0.75)
+  -moz-box-shadow: -1px 0px 15px -5px rgba(0,0,0,0.75)
+  box-shadow: -1px 0px 15px -5px rgba(0,0,0,0.75)
+  height: 100%
+  ul
+    margin: 20px 0
+    padding: 0
+    span
+      font-size: 20px
+      line-height: 0.5
+    li
+      line-height: 0.5
+      padding-bottom: 13px
+      list-style: none
+      font-size: 18px
+      font-weight: 550
+      a
+        color: #404040
+        margin-bottom: 2px
+        text-decoration: none
+        &:hover
+          color: #404040
+          cursor: pointer
+  .logo
+    width: 155px
+    height: 155px
+  .row.footer
+    position: absolute
+    margin: 0
+    padding: 10px 0
+    width: 100%
+    bottom: 0
+    background-color: $black
+    text-align: center
+    color: #ffffff
+    .col-md-12.header-contact
+      padding: 5px 0
+      h3
+        font-weight: 100
+        font-size: 24px
+    .col-md-12.contact
+      width: 50%
+      flex: 0 0 50%
+      max-width: 50%
+      padding: 0
+      font-size: 15px
+      text-align: left
+      font-weight: 300
+    .col-md-12.social
+      width: 50%
+      flex: 0 0 50%
+      max-width: 50%
+      text-align: left
+      i
+        font-size: 38px
+        font-weight: 100
+      i.fa-instagram
+        color: $purple
+        padding-right: 25px
+      i.fa-whatsapp
+        color: #77b709
+.content-data
+  width: 75%
+  float: right
+.header
+  height: 100vh
+  img
+    height: 100vh
+.half-circle
+    position: relative
+    margin: 0 auto
+    text-align: center
+    width: 190px
+    height: 95px
+    background-color: $black
+    border-bottom-left-radius: 100px
+    border-bottom-right-radius: 100px
+    border-top: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    display: table
+    h2
+      display: table-cell
+      color: #ffffff
+      text-transform: uppercase
+      line-height: 4
+      font-size: 24px
+      font-weight: 400
+.child-category-nav
+  margin: 30px 0
+  .col-md-3
+    text-align: center
+    margin-bottom: 15px
+    .btn
+      width: 80%
+      padding: .600rem .75rem
+      text-transform: uppercase
+.btn
+    display: inline-block
+    font-weight: 400
+    text-align: center
+    white-space: nowrap
+    vertical-align: middle
+    user-select: none
+    border: 1px solid transparent
+    padding: .375rem .75rem
+    font-family: Geometria !important
+    font-size: 1rem
+    line-height: 1.5
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    margin: 10px 0
+    border-radius: 0 !important
+    &.btn-brown
+      background-color: $brown
+      color: #ffffff
+      border: 1px solid $brown
+      &:hover
+        background: transparent
+        cursor: pointer
+        color: $brown
+    &.btn-purple
+      background-color: $purple
+      color: #ffffff
+      border: 1px solid $purple
+      &:hover
+        background: transparent
+        cursor: pointer
+        color: $purple
+    &.btn-green
+      background-color: $green
+      color: #ffffff
+      border: 1px solid $green
+      &:hover
+        background: transparent
+        cursor: pointer
+        color: $green
+    &.btn-orange
+      background-color: $orange
+      color: #ffffff
+      border-radius: 1px solid $orange
+      &:hover
+        background: transparent
+        cursor: pointer
+        color: $orange
+    &.btn-tr-brown
+      background-color: transparent
+      color: $brown
+      border: 1px solid $brown
+      &:hover
+        cursor: pointer
+        background-color: $brown
+        color: #ffffff
+    &.btn-tr-purple
+      background-color: transparent
+      border: 1px solid $purple
+      color: $purple
+      &:hover
+        cursor: pointer
+        color: #ffffff
+        background-color: $purple
+    &.btn-tr-green
+      background-color: transparent
+      border: 1px solid $green
+      color: $green
+      &:hover
+        cursor: pointer
+        background-color: $green
+        color: #ffffff
+    &.btn-tr-orange
+      background-color: transparent
+      border: 1px solid $orange
+      color: $orange
+      &:hover
+        cursor: pointer
+        background-color: $orange
+        color: #ffffff
+    &.btn-tr-white
+      background-color: transparent
+      border: 1px solid #ffffff
+      color: #ffffff
+      &:hover
+        cursor: pointer
+.category-title
+  margin-top: 65px
+  h2
+    color: #ffffff
+  .dotted-title-brown
+    border: 1px dashed $brown
+    width: 100%
+  .dotted-title-purple
+    border: 1px dashed $purple
+    width: 100%
+  .dotted-title-green
+    border: 1px dashed $green
+    width: 100%
+  .dotted-title-orange
+    border: 1px dashed $orange
+      width: 100%
+  .title-text-brown
+    h2
+      color: $brown
+      text-align: center
+  .title-text-purple
+    h2
+      color: $purple
+      text-align: center
+  .title-text-green
+    h2
+      color: $green
+      text-align: center
+  .title-text-orange
+    h2
+      color: $orange
+      text-align: center
+.col-md-3
+  .img-circle
+      border-radius: 50%
+      margin-bottom: 15px
+      &.image-item
+        width: 80%
+        height: auto
+.col-md-4
+  .img-circle
+      border-radius: 60%
+      margin-bottom: 15px
+      &.image-item
+        width: 60%
+        height: auto
+.item-brown
+  text-align: center
+  margin-top: 55px
+  h5
+    color: $brown
+    font-size: 17px
+    font-weight: 400
+    line-height: 1.5
+  .btn
+    margin: 0
+.item-purple
+  text-align: center
+  margin-top: 55px
+  h5
+    color: $brown
+    font-size: 17px
+    font-weight: 400
+    line-height: 1.5
+  .btn
+    margin: 0
+.item-green
+  text-align: center
+  margin-top: 55px
+  h5
+    color: $brown
+    font-size: 17px
+    font-weight: 400
+    line-height: 1.5
+  .btn
+    margin: 0
+.item-orange
+  text-align: center
+  margin-top: 55px
+  h5
+    color: $brown
+    font-size: 17px
+    font-weight: 400
+    line-height: 1.5
+  .btn
+    margin: 0
+.grid__item
+  padding: 0 35px
+.row.end-category
+  padding-bottom: 25px
+  background: #ffffff
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 58%, #f7f7f7 100%)
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 58%, #f7f7f7 100%)
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(58%, #ffffff), to(#f7f7f7))
+  background: -o-linear-gradient(top, #ffffff 0%, #ffffff 58%, #f7f7f7 100%)
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 58%, #f7f7f7 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0)
+.col-md-10.quote
+  margin: 45px auto
+  text-align: center
+  font-size: 22px
+  color: $brown
+  font-family: VeryBerryPro
+.row.footer
+  margin-top: 45px
+@media (min-width: 1400px)
+  .navs
+    width: 27%
+    ul
+      margin: 50px 0
+      padding: 0
+      span
+        font-size: 28px
+        line-height: 0.8
+      li
+        line-height: 0.8
+        padding-bottom: 22px
+        list-style: none
+        font-size: 34px
+        font-weight: 550
+        a
+          color: #404040
+          margin-bottom: 2px
+          text-decoration: none
+          &:hover
+            color: #404040
+            cursor: pointer
+    .logo
+      width: 250px
+      height: 250px
+    .row.footer
+      position: absolute
+      margin: 0
+      width: 100%
+      padding: 10px 0
+      bottom: 0
+      background-color: $black
+      text-align: center
+      color: #ffffff
+      .col-md-12.header-contact
+        padding: 25px 0
+        h3
+          font-weight: 100
+          font-size: 34px
+      .col-md-12.contact
+        width: 50%
+        flex: 0 0 50%
+        max-width: 50%
+        padding: 0
+        font-size: 28px
+        text-align: left
+      .col-md-12.social
+        width: 50%
+        flex: 0 0 50%
+        max-width: 50%
+        h5
+          font-size: 28px
+        i
+          font-size: 85px
+          font-weight: 100
+        i.fa-instagram
+          color: $purple
+          padding-right: 25px
+        i.fa-whatsapp
+          color: #77b709
+  .content-data
+    width: 73%
+    float: right
+  .item-brown
+    text-align: center
+    margin-top: 55px
+    h5
+      color: $brown
+      font-size: 20px
+      font-weight: 600
+      line-height: 1.5
+    .btn
+      margin: 0
+  .item-purple
+    text-align: center
+    margin-top: 55px
+    h5
+      color: $purple
+      font-size: 20px
+      font-weight: 600
+      line-height: 1.5
+    .btn
+      margin: 0
+  .item-green
+    text-align: center
+    margin-top: 55px
+    h5
+      color: $green
+      font-size: 20px
+      font-weight: 600
+      line-height: 1.5
+    .btn
+      margin: 0
+  .item-orange
+    text-align: center
+    margin-top: 55px
+    h5
+      color: $orange
+      font-size: 20px
+      font-weight: 600
+      line-height: 1.5
+    .btn
+      margin: 0
+.modal-title
+  line-height: 2
+  font-family: Geometria
+  margin: 0
+  font-size: 18px
+.modal-body
+  h3
+    font-size: 18px
+  h4
+    font-size: 14px
+  img
+    width: 100%
+    height: auto
+  span
+    font-size: 12px
+  .form-control
+      display: block
+      width: 100%
+      padding: .375rem .75rem
+      font-size: 1rem
+      line-height: 1.5
+      color: #495057
+      background-color: #fff
+      background-clip: padding-box
+      border: 1px solid #ced4da
+      border-radius: .25rem
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+.ctnr
+  margin: auto
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: 2000
+  opacity: 1
+  display: block
+  text-align: center
+  width: 100%
+  background-color: #ffffff
+  height: 100%
+.ctnr
+  img
+    width: 50px
+    vertical-align: middle
+    text-align: center
