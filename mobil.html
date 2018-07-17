@@ -15,6 +15,22 @@
   		<div style="height: 45%"></div>
   		<img src="img/loading_nice.gif" />
   	</section>
+    <div class="nav-content-block">
+      <div class="header">
+        <i id="close-nav-block" class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <br><br>
+      <div class="nav-list">
+        <ul>
+          <li>Пироги</li>
+          <li>Торты</li>
+          <li>Полуфабрикаты</li>
+          <li>Горячее</li>
+          <li>Салаты</li>
+        </ul>
+      </div>
+
+    </div>
     <div class="modal fade" id="modalGoods" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -59,6 +75,7 @@
         <div class=" col-md-12 logo">
           <img src="img/logo-mobil.jpg" />
         </div>
+
       </div>
       <div class="row grid__item shadow align-items-center">
         <div class="col-md-12 navs">
@@ -89,8 +106,22 @@
           </ul>
         </div>
       </div>
-
-      <div class="row grid__item ">
+      <div class="header-nav">
+        <div class="nav-header">
+            <div style="display: table; height: 100%">
+              <ul>
+                <li><img src="img/logo-mobil.jpg" alt=""></li>
+                <li>пироги</li>
+                <li>торты</li>
+                <li>полуфабрикаты</li>
+                <li style="opacity: 0.7">са</li>
+                <li></li>
+                <li style="text-align: right"><i id="nav-icon-bars" class="fa fa-bars" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div id="pirogi" class="row grid__item ">
         <div class="half-circle">
           <h2>Пироги</h2>
         </div>
@@ -114,7 +145,6 @@
           </div>
         </div>
       </div>
-
       <div class="row grid__item ">
         <div class=" col-md-12">
           <div id="one-1"class="category-title">
@@ -240,7 +270,6 @@
           >2000 тг. за кг.</button>
         </div>
       </div>
-
       <div class="row shadow grid__item ">
         <div class=" col-md-12">
           <div id="one-1"class="category-title">
@@ -297,7 +326,6 @@
             >2000 тг. за кг.</button>
           </div>
       </div>
-
       <div class="row grid__item ">
         <div class="half-circle">
           <h2>Торты</h2>
@@ -345,9 +373,9 @@
       <div class="btn-fixed contact-btn">
         <button>КОНТАКТЫ</button>
       </div>
-      <div class="btn-fixed nav-btn">
+      <!--<div class="btn-fixed nav-btn">
         <button>МЕНЮ</button>
-      </div>
+      </div>-->
     </div>
     <div id="contact" class="row black grid__item footer ">
       <div class=" col-md-12">
@@ -359,9 +387,9 @@
           <div class="col-md-12 contact">
             <h4>контакты</h4>
             <br>
-            <p><i class="fab fa-whatsapp"></i>&#8195;+7 707 717 34 81</p>
-            <p><i class="fab fa-whatsapp"></i>&#8195;+7 707 357 5555</p>
-            <p><i class="fas fa-phone"></i>&#8195;357 55 55</p>
+            <p><a href="tel:+77077173481"><i class="fab fa-whatsapp"></i>&#8195;+7 707 717 34 81</a></p>
+            <p><a href="tel:+77073575555"><i class="fab fa-whatsapp"></i>&#8195;+7 707 357 5555</a></p>
+            <p><a href="tel:+77273575555"><i class="fas fa-phone"></i>&#8195;357 55 55</a></p>
           </div>
           <br />
           <div class="col-md-12 address">
@@ -432,18 +460,23 @@
 <script type="text/javascript">
   $(window).scroll(function() {
     var height = $(window).scrollTop(),
-        top = $(".footer").offset().top-340;
+        top = $("#pirogi").offset().top;
         if(height >= top){
-          $(".contact-btn").css({'display':'none'});
-          $(".nav-btn").css({'display':'block'});
+          $(".header-nav").css({'display':'block'});
         }else{
-          $(".contact-btn").css({'display':'block'});
-          $(".nav-btn").css({'display':'none'});
+          $(".header-nav").css({'display':'none'});
         }
   });
+  $("#close-nav-block").click(function(){
+    $(".nav-content-block").css({'z-index': '0','display': 'none'});
+  })
+  $("#nav-icon-bars").click(function(){
+    $(".nav-content-block").css({'z-index': '21','display': 'block'});
+  })
 </script>
 <script type="text/javascript">
 	$(window).ready(function(){
 	 $(".ctnr").css({"opacity": '0',"display":"none","z-index": '-1'});
+
 	});
 </script>
